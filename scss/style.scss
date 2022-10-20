@@ -219,7 +219,7 @@ html {
                         top: -600px;
                         right: 670px;
                         z-index: -4;
-                        animation: invisible 0.2s ease-in-out, showUp 0.5s 0.3s linear forwards;
+                        animation: invisible 0.3s linear, showUp 0.6s 0.3s linear forwards;
                     }
 
                     .objectLeft_shadow {
@@ -231,7 +231,7 @@ html {
                         right: 626px;
                         //left: -232px;
                         z-index: -5;
-                        animation: invisible 0.2s ease-in-out, showUpshadow 0.5s 0.35s ease-in forwards;
+                        animation: invisible 0.35s linear, showUp 0.6s 0.35s linear forwards;
                     }
 
                     .objRight {
@@ -240,10 +240,9 @@ html {
                         background: url(../img/objectRight.png) no-repeat;
                         position: absolute;
                         top: -600px;
-                        left: -1229px;
-                        //right: -232px;
+                        left: 604px;
                         z-index: -4;
-                        animation: invisible 2s linear, showUp2 0.5s 0.3s ease-in-out forwards;
+                        animation: invisible 0.3s linear, showUp2 0.6s 0.3s linear forwards;
                     }
 
                     .objectRight_shadow {
@@ -252,9 +251,9 @@ html {
                         background: url(../img/objectRight_shadow.png) no-repeat;
                         position: absolute;
                         top: -599px;
-                        left: -1229px;
+                        left: 590px;
                         z-index: -5;
-                        animation: invisible 0.8s ease-in, showUpshadow2 0.5s 0.35s ease-in-out forwards;
+                        animation: invisible 0.35s ease-in, showUp2 0.6s 0.35s linear forwards;
                     }
 
                     .soccer {
@@ -312,49 +311,33 @@ html {
 
 @keyframes showUp {
     0% {
-        right: -1120px;
-        transform: scale(0.5),translateX(-1120px);
+        transform: translateX(300%);
         opacity: 0;
     }
-    100% {
-        right: 670px;
-        transform: scale(1);
-        opacity: 1;
+    50% {
+        transform: translateX(90%);
     }
-}
-@keyframes showUpshadow {
-    0% {
-        right: -1120px;
-        transform: scale(0.5);
-        opacity: 0;
+    75% {
+        transform: translateX(30%);
     }
     100% {
-        right: 626px;
-        transform: scale(1);
+        transform: translateX(0);
         opacity: 1;
     }
 }
 @keyframes showUp2 {
     0% {
-        right: -1120px;
-        transform: scale(0.5);
+        transform: translateX(-300%);
         opacity: 0;
     }
-    100% {
-        left: 691px;
-        transform: scale(1);
-        opacity: 1;
+    50% {
+        transform: translateX(-90%);
     }
-}
-@keyframes showUpshadow2 {
-    0% {
-        left: -1120px;
-        transform: scale(0.5);
-        opacity: 0;
+    75% {
+        transform: translateX(-30%);
     }
     100% {
-        left: 626px;
-        transform: scale(1);
+        transform: translateX(0);
         opacity: 1;
     }
 }

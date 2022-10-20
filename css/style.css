@@ -254,8 +254,8 @@ html body main .center .bottom .objLeft {
   top: -600px;
   right: 670px;
   z-index: -4;
-  -webkit-animation: invisible 0.2s ease-in-out, showUp 0.5s 0.3s linear forwards;
-          animation: invisible 0.2s ease-in-out, showUp 0.5s 0.3s linear forwards;
+  -webkit-animation: invisible 0.3s linear, showUp 0.6s 0.3s linear forwards;
+          animation: invisible 0.3s linear, showUp 0.6s 0.3s linear forwards;
 }
 html body main .center .bottom .objectLeft_shadow {
   width: 703px;
@@ -265,8 +265,8 @@ html body main .center .bottom .objectLeft_shadow {
   top: -600px;
   right: 626px;
   z-index: -5;
-  -webkit-animation: invisible 0.2s ease-in-out, showUpshadow 0.5s 0.35s ease-in forwards;
-          animation: invisible 0.2s ease-in-out, showUpshadow 0.5s 0.35s ease-in forwards;
+  -webkit-animation: invisible 0.35s linear, showUp 0.6s 0.35s linear forwards;
+          animation: invisible 0.35s linear, showUp 0.6s 0.35s linear forwards;
 }
 html body main .center .bottom .objRight {
   width: 622px;
@@ -274,10 +274,10 @@ html body main .center .bottom .objRight {
   background: url(../img/objectRight.png) no-repeat;
   position: absolute;
   top: -600px;
-  left: -1229px;
+  left: 604px;
   z-index: -4;
-  -webkit-animation: invisible 2s linear, showUp2 0.5s 0.3s ease-in-out forwards;
-          animation: invisible 2s linear, showUp2 0.5s 0.3s ease-in-out forwards;
+  -webkit-animation: invisible 0.3s linear, showUp2 0.6s 0.3s linear forwards;
+          animation: invisible 0.3s linear, showUp2 0.6s 0.3s linear forwards;
 }
 html body main .center .bottom .objectRight_shadow {
   width: 707px;
@@ -285,10 +285,10 @@ html body main .center .bottom .objectRight_shadow {
   background: url(../img/objectRight_shadow.png) no-repeat;
   position: absolute;
   top: -599px;
-  left: -1229px;
+  left: 590px;
   z-index: -5;
-  -webkit-animation: invisible 0.8s ease-in, showUpshadow2 0.5s 0.35s ease-in-out forwards;
-          animation: invisible 0.8s ease-in, showUpshadow2 0.5s 0.35s ease-in-out forwards;
+  -webkit-animation: invisible 0.35s ease-in, showUp2 0.6s 0.35s linear forwards;
+          animation: invisible 0.35s ease-in, showUp2 0.6s 0.35s linear forwards;
 }
 html body main .center .bottom .soccer {
   width: 343px;
@@ -368,113 +368,81 @@ html body main .bg {
 }
 @-webkit-keyframes showUp {
   0% {
-    right: -1120px;
-    -webkit-transform: scale(0.5), translateX(-1120px);
-            transform: scale(0.5), translateX(-1120px);
+    -webkit-transform: translateX(300%);
+            transform: translateX(300%);
     opacity: 0;
   }
+  50% {
+    -webkit-transform: translateX(90%);
+            transform: translateX(90%);
+  }
+  75% {
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
+  }
   100% {
-    right: 670px;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
 }
 @keyframes showUp {
   0% {
-    right: -1120px;
-    -webkit-transform: scale(0.5), translateX(-1120px);
-            transform: scale(0.5), translateX(-1120px);
+    -webkit-transform: translateX(300%);
+            transform: translateX(300%);
     opacity: 0;
   }
-  100% {
-    right: 670px;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
+  50% {
+    -webkit-transform: translateX(90%);
+            transform: translateX(90%);
   }
-}
-@-webkit-keyframes showUpshadow {
-  0% {
-    right: -1120px;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    opacity: 0;
+  75% {
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
   }
   100% {
-    right: 626px;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-@keyframes showUpshadow {
-  0% {
-    right: -1120px;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    opacity: 0;
-  }
-  100% {
-    right: 626px;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
 }
 @-webkit-keyframes showUp2 {
   0% {
-    right: -1120px;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
     opacity: 0;
   }
+  50% {
+    -webkit-transform: translateX(-90%);
+            transform: translateX(-90%);
+  }
+  75% {
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
+  }
   100% {
-    left: 691px;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
 }
 @keyframes showUp2 {
   0% {
-    right: -1120px;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
     opacity: 0;
   }
-  100% {
-    left: 691px;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
+  50% {
+    -webkit-transform: translateX(-90%);
+            transform: translateX(-90%);
   }
-}
-@-webkit-keyframes showUpshadow2 {
-  0% {
-    left: -1120px;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    opacity: 0;
+  75% {
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
   }
   100% {
-    left: 626px;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-@keyframes showUpshadow2 {
-  0% {
-    left: -1120px;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    opacity: 0;
-  }
-  100% {
-    left: 626px;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
 }

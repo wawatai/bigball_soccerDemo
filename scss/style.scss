@@ -219,7 +219,7 @@ html {
                         top: -600px;
                         right: 670px;
                         z-index: -4;
-                        animation: invisible 0.2s ease-in-out, showUp 0.1s 0.2s ease-in-out forwards;
+                        animation: invisible 0.2s ease-in-out, showUp 0.5s 0.3s linear forwards;
                     }
 
                     .objectLeft_shadow {
@@ -231,7 +231,7 @@ html {
                         right: 626px;
                         //left: -232px;
                         z-index: -5;
-                        animation: invisible 0.2s ease-in-out, showUpshadow 0.1s 0.2s ease-in-out forwards;
+                        animation: invisible 0.2s ease-in-out, showUpshadow 0.5s 0.35s ease-in forwards;
                     }
 
                     .objRight {
@@ -243,7 +243,7 @@ html {
                         left: -1229px;
                         //right: -232px;
                         z-index: -4;
-                        animation: invisible 0.2s ease-in-out, showUp2 0.1s 0.2s ease-in-out forwards;
+                        animation: invisible 2s linear, showUp2 0.5s 0.3s ease-in-out forwards;
                     }
 
                     .objectRight_shadow {
@@ -254,7 +254,7 @@ html {
                         top: -599px;
                         left: -1229px;
                         z-index: -5;
-                        animation: invisible 0.2s ease-in-out, showUpshadow2 0.1s 0.2s ease-in-out forwards;
+                        animation: invisible 0.8s ease-in, showUpshadow2 0.5s 0.35s ease-in-out forwards;
                     }
 
                     .soccer {
@@ -266,7 +266,7 @@ html {
                         top: -11px;
                         left: 378px;
                         opacity: 1;
-                        animation: invisible 0.3s ease-in-out, ball 0.1s 0.3s ease-out forwards;
+                        animation: invisible 0.8s ease-in-out, ball 0.1s 0.8s ease-out forwards;
                         z-index: 5;
                     }
                 }
@@ -313,7 +313,7 @@ html {
 @keyframes showUp {
     0% {
         right: -1120px;
-        transform: scale(0.5);
+        transform: scale(0.5),translateX(-1120px);
         opacity: 0;
     }
     100% {

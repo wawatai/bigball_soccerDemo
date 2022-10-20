@@ -254,8 +254,8 @@ html body main .center .bottom .objLeft {
   top: -600px;
   right: 670px;
   z-index: -4;
-  -webkit-animation: invisible 0.2s ease-in-out, showUp 0.1s 0.2s ease-in-out forwards;
-          animation: invisible 0.2s ease-in-out, showUp 0.1s 0.2s ease-in-out forwards;
+  -webkit-animation: invisible 0.2s ease-in-out, showUp 0.5s 0.3s linear forwards;
+          animation: invisible 0.2s ease-in-out, showUp 0.5s 0.3s linear forwards;
 }
 html body main .center .bottom .objectLeft_shadow {
   width: 703px;
@@ -265,8 +265,8 @@ html body main .center .bottom .objectLeft_shadow {
   top: -600px;
   right: 626px;
   z-index: -5;
-  -webkit-animation: invisible 0.2s ease-in-out, showUpshadow 0.1s 0.2s ease-in-out forwards;
-          animation: invisible 0.2s ease-in-out, showUpshadow 0.1s 0.2s ease-in-out forwards;
+  -webkit-animation: invisible 0.2s ease-in-out, showUpshadow 0.5s 0.35s ease-in forwards;
+          animation: invisible 0.2s ease-in-out, showUpshadow 0.5s 0.35s ease-in forwards;
 }
 html body main .center .bottom .objRight {
   width: 622px;
@@ -276,8 +276,8 @@ html body main .center .bottom .objRight {
   top: -600px;
   left: -1229px;
   z-index: -4;
-  -webkit-animation: invisible 0.2s ease-in-out, showUp2 0.1s 0.2s ease-in-out forwards;
-          animation: invisible 0.2s ease-in-out, showUp2 0.1s 0.2s ease-in-out forwards;
+  -webkit-animation: invisible 2s linear, showUp2 0.5s 0.3s ease-in-out forwards;
+          animation: invisible 2s linear, showUp2 0.5s 0.3s ease-in-out forwards;
 }
 html body main .center .bottom .objectRight_shadow {
   width: 707px;
@@ -287,8 +287,8 @@ html body main .center .bottom .objectRight_shadow {
   top: -599px;
   left: -1229px;
   z-index: -5;
-  -webkit-animation: invisible 0.2s ease-in-out, showUpshadow2 0.1s 0.2s ease-in-out forwards;
-          animation: invisible 0.2s ease-in-out, showUpshadow2 0.1s 0.2s ease-in-out forwards;
+  -webkit-animation: invisible 0.8s ease-in, showUpshadow2 0.5s 0.35s ease-in-out forwards;
+          animation: invisible 0.8s ease-in, showUpshadow2 0.5s 0.35s ease-in-out forwards;
 }
 html body main .center .bottom .soccer {
   width: 343px;
@@ -299,8 +299,8 @@ html body main .center .bottom .soccer {
   top: -11px;
   left: 378px;
   opacity: 1;
-  -webkit-animation: invisible 0.3s ease-in-out, ball 0.1s 0.3s ease-out forwards;
-          animation: invisible 0.3s ease-in-out, ball 0.1s 0.3s ease-out forwards;
+  -webkit-animation: invisible 0.8s ease-in-out, ball 0.1s 0.8s ease-out forwards;
+          animation: invisible 0.8s ease-in-out, ball 0.1s 0.8s ease-out forwards;
   z-index: 5;
 }
 html body main .bg {
@@ -369,8 +369,8 @@ html body main .bg {
 @-webkit-keyframes showUp {
   0% {
     right: -1120px;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(0.5), translateX(-1120px);
+            transform: scale(0.5), translateX(-1120px);
     opacity: 0;
   }
   100% {
@@ -383,8 +383,8 @@ html body main .bg {
 @keyframes showUp {
   0% {
     right: -1120px;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(0.5), translateX(-1120px);
+            transform: scale(0.5), translateX(-1120px);
     opacity: 0;
   }
   100% {
